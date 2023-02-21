@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Your sweet ASF Diary</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">  
+    </head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__item navbar__left-container"><img class=navbar__img src="resources/crystal-ball_1f52e.png" alt="Crystal ball"></div>
+            <div class="navbar__item navbar__middle-container"><h1 class="navbar__title-headline">My sad ASF DIARY aka sandbox</h1></div>
+            <div class="navbar__item navbar__right-container dropdown-button"><p class="navbar__text">...</p></div>
+            
+            <div class='navbar__item navbar__dropdown-content dropdown-content'><p>Hi! Menu is under construction. 🏗 🏗</p></div>
+        
+        </nav>
+    </header>   
+
+
+    <main class="page">
+        <section class="articles__container">
+            <div class='articles__filter-content filter-content'>
+                <button data-filter="*" class="filter-content__item active" type="button">Show All</button>
+                <button data-filter="movies" class="filter-content__item" type="button">Movies</button>
+                <button data-filter="mood" class="filter-content__item" type="button">Mood</button>
+                <button data-filter="quotes" class="filter-content__item" type="button">Quotes</button>
+                <button data-filter="divination" class="filter-content__item" type="button">Divination</button>
+                <button data-filter="miscellaneous" class="filter-content__item" type="button">Miscellaneous</button>
+
+            </div>
+            
+        <div class="articles__grid">
+
+            <article data-filter='miscellaneous' class="articles__box box">
+                <h3 class="box__headline">Hangman Crystal Edition</h3>
+                    <div class="game__container">
+                    <button class="btn btn__box--category btn__box--category--image">Miscellaneous</button>  
+                    <div id="game__crystals-container"></div>
+
+                        <form id="game__form">
+                            <button class='btn btn__game' type="submit">Play</button>
+                          </form>
+                          <div id="game__categories-container">
+                            <h3 class="game__category-headline">Choose category</h3>
+                          <div id="game__categories">
+                        </div>
+                          </div>
+
+                            <div id="game__play">
+                                <div id="game__category-slot" class="game__upper-info">
+                                    <p>Category</p>
+                                    <p id='game__choosen-category'></p>
+                                </div>
+                                <div id="game__chances-slot" class="game__slot game__upper-info">
+                                    <p>Chances</p>
+                                    <p id='game__chances'></p>
+                                </div>
+                                <div id="game__letter-holder"></div>
+                                <div id='game__down-container' class="game__down-box">
+                                <div id="game__form-container">
+                                <form id="game__try-letter">
+                                    <label class='game__label' for="letter">Letter:</label>
+                                    <input class='game__input-letter' type="text" id="letter" name="letter" pattern="[a-zA-Z]{1}" autocomplete="off"  maxlength="1" placeholder='Type...' required>
+                                    <button class='game__button-try' type="submit"></span>Try<span></button></form></div>
+                                <div id="game__comment"></div>
+                                <div id="game__used-letters" class="">
+                                    <p><strong>Used letters:</strong></p>
+                                    <p id="game__letter-list"></p>
+                                    <p id="game__word"></p>
+                                </div>
+                            </div>
+                            </div>
+
+                </div>
+                    <div class="box__container">
+                        <button class="btn btn__box--tag">Gaming</button>
+                        <button class="btn btn__box--tag">gamin</button>
+                    </div>
+                </article>
+
+
+
+
+
+        <article data-filter='miscellaneous' class="articles__box box">
+            <h3 class="box__headline">Your Inner Space Oddity</h3>
+            <button class="btn btn__box--category btn__box--category--plain">Miscellaneous</button>
+            <div class='box__container box__container--paragraph'>
+                <form id='survay' class="survay" action="" method="get">
+                    <section class="survay__box essence">
+                        <span class="survay__question">Do you believe that existence precedes essence? </span>
+                        <br>
+                        <input type="radio" name="essence" id="essence" value="yes" required>
+                        <label for="essence">Yes</label>
+                        <br>
+                        <input type="radio" name="essence" id="no" value="no" required>
+                        <label for="essence">No</label>
+                      </section>
+                      <hr>
+                      <section class="survay__box purpose">
+                        <span class="survay__question">Do you feel that you have a specific purpose in life? </span>
+                        <br>
+                        <input type="radio" name="purpose" id="yes" value="yes" required>
+                        <label for="purpose">Yes</label>
+                        <br>
+                        <input type="radio" name="purpose" id="no" value="no" required>
+                        <label for="purpose">No</label>
+                        <br>
+                        <input type="radio" name="purpose" id="notSure" value="notSure" required>
+                        <label for="purpose"> I'm not sure</label>
+                      </section>
+                      <hr>
+                      <section class="survay__box">
+                        <label class="survay__question" for="longing">Have you ever felt a sense of longing for a world that doesn't exist? </label>
+                        <br>
+                        <div class="survay__container--range">
+                        <span class="survay__range">Strongly agree</span>
+                        <span class="survay__range">Neutral</span>
+                        <span class="survay__range">Strongly disagree</span>
+                    </div>
+                        <input class='slider' type="range" name="longing" id="longing" value="3" min="1" max="5" required>
+                      </section>
+                      <hr>
+                      <section class="survay__box">
+                        <span class="survay__question">Do you believe in the power of storytelling to shape our reality?</span>
+                        <br>
+                        <input type="radio" name="storytelling" id="yes" value="yes" required>
+                        <label for="yes">Yes, absolutely</label>
+                        <br>
+                        <input type="radio" name="storytelling" id="no" value="no" required>
+                        <label for="no">No, not at all</label>
+                        <br>
+                        <input type="radio" name="storytelling" id="notSure" value="notSure" required>
+                        <label for="notSure">Somewhat, it depends on the story</label>
+                      </section>
+                      <hr>
+                      <section class="survay__box">
+                        <span class="survay__question">How do you see the future of humanity and the world we live in?</span>
+                        <br>
+                        <input type="radio" name="future" id="yes" value="yes" required>
+                        <label for="yes">Hopeful and bright</label>
+                        <br>
+                        <input type="radio" name="future" id="no" value="no" required>
+                        <label for="no">Uncertain and unpredictable </label>
+                        <br>
+                        <input type="radio" name="future" id="notSure" value="notSure" required>
+                        <label for="notSure">Somewhat, it depends on the story</label>
+                        <br>
+                        <input type="radio" name="future" id="notSure" value="notSure" required>
+                        <label for="notSure">Bleak and dystopian</label>
+                        <br>
+                        <input type="radio" name="future" id="notSure" value="notSure" required>
+                        <label for="notSure">It depends on our actions and choices</label>
+                      </section>
+
+                <section class="survay__box survay-submission">
+                    <br>
+                    <input class='btn btn--survay' type="submit" value="Submit">
+                  </section>
+                </form>
+              
+            </div>
+                <div class="box__container">
+                    <button class="btn btn__box--tag">Astral Queries</button>
+                    <button class="btn btn__box--tag">Galactic Groove</button>
+                </div>
+            </article>
+
+            <article data-filter='divination' class="articles__box box box--fortune">
+                <h3 class="box__headline">Mother fairy</h3>
+                <div class="box__container box__container--image">
+                    <button class="btn btn__box--category btn__box--category--image">Divination</button>
+                    <div class='fade-out' id="fortune-prediction"></div>
+                    <img class='box__img' src="resources/d5c1843f2242a7e719b8276ab1654497.gif" alt="">
+                </div>
+                <div class='box__container box__container'>
+                    <button class='' id="generate-fortune">Ask for your fortune</button>
+
+                </div>
+                </article>
+
+    
+        
+        
+
+        <article data-filter='mood' class="articles__box box ">
+            <h3 class="box__headline">Iron tears</h3>
+            <div class="box__container box__container--image">
+                <button class="btn btn__box--category btn__box--category--image">Mood</button>
+                <img class='box__img' src="resources/230593237939016d0dd7d56981433c12.jpg" alt="">
+            </div>
+        <div class='box__container box__container--content'>
+        </div>
+        <div class="box__container">
+
+                <button class="btn btn__box--tag">Manga</button>
+                <button class="btn btn__box--tag">Sadfrogs</button>
+                <button class="btn btn__box--tag">Siren</button>
+            </div>
+        </article>
+    
+    
+
+        <article data-filter='quotes' class="articles__box box">
+        <h3 class="box__headline">/***/</h3>
+        <button class="btn btn__box--category btn__box--category--plain ">Quotes</button>
+        <div class='box__container box__container--paragraph'>
+                <p class='quote__content'>But I don’t want comfort. I want God, I want poetry, I want real danger, I want freedom, I want goodness. I want sin.</p> 
+                <p class='quote__author'>Aldous Huxley, <i>Brave New World</i></p>
+            </p>
+        </div>
+            <div class="box__container">
+                <button class="btn btn__box--tag">Hunger</button>
+                <button class="btn btn__box--tag">Desire</button>
+            </div>
+        </article>
+
+        <article data-filter='movies' class="articles__box box">
+        <h3 class="box__headline">hi ^_^, im blue today</h3>
+        <div class="box__container box__container--image">
+            <button class="btn btn__box--category btn__box--category--image">Movies</button>
+            <img class='box__img' src="resources/43b99e081317e9ee85f621321a5a89ef.jpg" alt="">
+        </div>
+            <div class="box__container">
+                <button class="btn btn__box--tag"> daba dee daba die</button>
+                <button class="btn btn__box--tag">xdddd</button>
+            </div>
+        </article>
+
+        <article data-filter='mood' class="articles__box box">
+            <h3 class="box__headline">Iron tears</h3>
+            <div class="box__container box__container--image">
+                <button class="btn btn__box--category btn__box--category--image">Mood</button>
+                <img class='box__img' src="resources/kodamas-set-3d-model-obj-fbx-stl-blend.jpg" alt="">
+            </div>
+        <div class='box__container box__container--content'>
+        </div>
+        <div class="box__container">
+
+                <button class="btn btn__box--tag">Manga</button>
+                <button class="btn btn__box--tag">Sadfrogs</button>
+                <button class="btn btn__box--tag">Siren</button>
+            </div>
+        </article>
+        <article data-filter='divination' class="articles__box box">
+            <h3 class="box__headline">Cold water</h3>
+            <div class="box__container box__container--image">
+                <button class="btn btn__box--category btn__box--category--image">Astrology</button>
+                <img class='box__img' src="resources/9d8b32f94603c1f7846e9db26416c4e2.jpg" alt="">
+            </div>
+            <div class='box__container box__container'>
+                <p>        let mood = 'sleepy';
+                    let tirednessLevel = 6;
+                    
+                    if (mood === 'sleepy' && tirednessLevel > 8) {
+                      console.log('time to sleep')
+                    } else {
+                      console.log('not bed time yet')
+                    }
+                            </p>
+            </div>
+                <div class="box__container">
+                    <button class="btn btn__box--tag">Alien</button>
+                    <button class="btn btn__box--tag">Baby</button>
+                </div>
+            </div>
+        </article>
+
+        
+        
+        </section>
+    </main>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/fortune-teller.js"></script>
+    <script src="js/falling-apples.js"></script>
+</body>
+</html>
