@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <head>
+            <meta charset="UTF-8">
+            <title>Your sweet ASF Diary</title>
+            <meta name="description" content="Keep track of your daily life with Your sweet ASF Diary.">
+            <meta name="author" content="Aro">
+            <meta name="robots" content="index,follow">
+            <meta property="og:title" content="Your sweet ASF Diary">
+            <meta property="og:description" content="Keep track of your daily life with Your sweet ASF Diary. ">
+            <meta property="og:image" content="./resources/1122f9105bd783c2369152b62f471b11.jpg">
+            <meta property="og:url" content="https://stalwart-marzipan.netlify.app">
+            <link rel="icon" href="./resources/skull_1f480.png" type="image/x-icon">
+            <link rel="apple-touch-icon" href="./resources/skull_1f480.png">
         <title>Your sweet ASF Diary</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/style.css">  
+        <link rel="stylesheet" href="css/style.css"> 
     </head>
 
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__item navbar__left-container"><img class=navbar__img src="resources/crystal-ball_1f52e.png" alt="Crystal ball"></div>
+            <div class="navbar__item navbar__left-container"><img class=navbar__img src="./resources/crystal-ball_1f52e.png" alt="Crystal ball"></div>
             <div class="navbar__item navbar__middle-container"><h1 class="navbar__title-headline">My sad ASF DIARY aka sandbox</h1></div>
             <div class="navbar__item navbar__right-container dropdown-button"><p class="navbar__text">...</p></div>
             
@@ -33,14 +45,14 @@
             
         <div class="articles__grid">
 
-            <article data-filter='miscellaneous' class="articles__box box">
+         <article data-filter='miscellaneous' class="articles__box box">
                 <h3 class="box__headline">Hangman Crystal Edition</h3>
                     <div class="game__container">
                     <button class="btn btn__box--category btn__box--category--image">Miscellaneous</button>  
                     <div id="game__crystals-container"></div>
 
                         <form id="game__form">
-                            <button class='btn btn__game' type="submit">Play</button>
+                            <button class='game__button-category game__category-sizer game__button-start' type="submit">Play</button>
                           </form>
                           <div id="game__categories-container">
                             <h3 class="game__category-headline">Choose category</h3>
@@ -78,9 +90,7 @@
                         <button class="btn btn__box--tag">Gaming</button>
                         <button class="btn btn__box--tag">gamin</button>
                     </div>
-                </article>
-
-
+            </article>
 
 
 
@@ -88,43 +98,43 @@
             <h3 class="box__headline">Your Inner Space Oddity</h3>
             <button class="btn btn__box--category btn__box--category--plain">Miscellaneous</button>
             <div class='box__container box__container--paragraph'>
-                <form id='survay' class="survay" action="" method="get">
-                    <section class="survay__box essence">
-                        <span class="survay__question">Do you believe that existence precedes essence? </span>
+                <form id='survey' class="survey" action="" method="get">
+                    <section class="survey__box essence">
+                        <span class="survey__question">Do you believe that existence precedes essence?</span>
                         <br>
-                        <input type="radio" name="essence" id="essence" value="yes" required>
-                        <label for="essence">Yes</label>
+                        <input type="radio" name="essence" id="essence_yes" value="yes" required>
+                        <label for="essence_yes">Yes</label>
                         <br>
-                        <input type="radio" name="essence" id="no" value="no" required>
-                        <label for="essence">No</label>
-                      </section>
+                        <input type="radio" name="essence" id="essence_no" value="no" required>
+                        <label for="essence_no">No</label>
+                    </section>
+                    <hr>
+                    <section class="survey__box purpose">
+                        <span class="survey__question">Do you feel that you have a specific purpose in life?</span>
+                        <br>
+                        <input type="radio" name="purpose" id="purpose_yes" value="yes" required>
+                        <label for="purpose_yes">Yes</label>
+                        <br>
+                        <input type="radio" name="purpose" id="purpose_no" value="no" required>
+                        <label for="purpose_no">No</label>
+                        <br>
+                        <input type="radio" name="purpose" id="purpose_notSure" value="notSure" required>
+                        <label for="purpose_notSure">I'm not sure</label>
+                    </section>
                       <hr>
-                      <section class="survay__box purpose">
-                        <span class="survay__question">Do you feel that you have a specific purpose in life? </span>
+                      <section class="survey__box">
+                        <label class="survey__question" for="longing">Have you ever felt a sense of longing for a world that doesn't exist?</label>
                         <br>
-                        <input type="radio" name="purpose" id="yes" value="yes" required>
-                        <label for="purpose">Yes</label>
-                        <br>
-                        <input type="radio" name="purpose" id="no" value="no" required>
-                        <label for="purpose">No</label>
-                        <br>
-                        <input type="radio" name="purpose" id="notSure" value="notSure" required>
-                        <label for="purpose"> I'm not sure</label>
-                      </section>
-                      <hr>
-                      <section class="survay__box">
-                        <label class="survay__question" for="longing">Have you ever felt a sense of longing for a world that doesn't exist? </label>
-                        <br>
-                        <div class="survay__container--range">
-                        <span class="survay__range">Strongly agree</span>
-                        <span class="survay__range">Neutral</span>
-                        <span class="survay__range">Strongly disagree</span>
-                    </div>
+                        <div class="survey__container--range">
+                          <span class="survey__range">Strongly agree</span>
+                          <span class="survey__range">Neutral</span>
+                          <span class="survey__range">Strongly disagree</span>
+                        </div>
                         <input class='slider' type="range" name="longing" id="longing" value="3" min="1" max="5" required>
                       </section>
                       <hr>
-                      <section class="survay__box">
-                        <span class="survay__question">Do you believe in the power of storytelling to shape our reality?</span>
+                      <section class="survey__box">
+                        <span class="survey__question">Do you believe in the power of storytelling to shape our reality?</span>
                         <br>
                         <input type="radio" name="storytelling" id="yes" value="yes" required>
                         <label for="yes">Yes, absolutely</label>
@@ -136,28 +146,25 @@
                         <label for="notSure">Somewhat, it depends on the story</label>
                       </section>
                       <hr>
-                      <section class="survay__box">
-                        <span class="survay__question">How do you see the future of humanity and the world we live in?</span>
+                      <section class="survey__box">
+                        <span class="survey__question">How do you see the future of humanity and the world we live in?</span>
                         <br>
-                        <input type="radio" name="future" id="yes" value="yes" required>
-                        <label for="yes">Hopeful and bright</label>
+                        <input type="radio" name="future" id="hopeful" value="hopeful" required>
+                        <label for="hopeful">Hopeful and bright</label>
                         <br>
-                        <input type="radio" name="future" id="no" value="no" required>
-                        <label for="no">Uncertain and unpredictable </label>
+                        <input type="radio" name="future" id="uncertain" value="uncertain" required>
+                        <label for="uncertain">Uncertain and unpredictable</label>
                         <br>
-                        <input type="radio" name="future" id="notSure" value="notSure" required>
-                        <label for="notSure">Somewhat, it depends on the story</label>
+                        <input type="radio" name="future" id="bleak" value="bleak" required>
+                        <label for="bleak">Bleak and dystopian</label>
                         <br>
-                        <input type="radio" name="future" id="notSure" value="notSure" required>
-                        <label for="notSure">Bleak and dystopian</label>
-                        <br>
-                        <input type="radio" name="future" id="notSure" value="notSure" required>
-                        <label for="notSure">It depends on our actions and choices</label>
+                        <input type="radio" name="future" id="depends" value="depends" required>
+                        <label for="depends">It depends on our actions and choices</label>
                       </section>
 
-                <section class="survay__box survay-submission">
+                <section class="survey__box survey-submission">
                     <br>
-                    <input class='btn btn--survay' type="submit" value="Submit">
+                    <input class='btn btn--survey' type="submit" value="Submit">
                   </section>
                 </form>
               
@@ -168,40 +175,21 @@
                 </div>
             </article>
 
-            <article data-filter='divination' class="articles__box box box--fortune">
-                <h3 class="box__headline">Mother fairy</h3>
-                <div class="box__container box__container--image">
-                    <button class="btn btn__box--category btn__box--category--image">Divination</button>
-                    <div class='fade-out' id="fortune-prediction"></div>
-                    <img class='box__img' src="resources/d5c1843f2242a7e719b8276ab1654497.gif" alt="">
-                </div>
-                <div class='box__container box__container'>
-                    <button class='' id="generate-fortune">Ask for your fortune</button>
-
-                </div>
-                </article>
-
-    
-        
-        
-
-        <article data-filter='mood' class="articles__box box ">
-            <h3 class="box__headline">Iron tears</h3>
+        <article data-filter='divination' class="articles__box box box--fortune">
+            <h3 class="box__headline">Mother fairy</h3>
             <div class="box__container box__container--image">
-                <button class="btn btn__box--category btn__box--category--image">Mood</button>
-                <img class='box__img' src="resources/230593237939016d0dd7d56981433c12.jpg" alt="">
+                <button class="btn btn__box--category btn__box--category--image">Divination</button>
+                <div class='fade-out' id="fortune-prediction"></div>
+                <img class='box__img' src="resources/d5c1843f2242a7e719b8276ab1654497.gif" alt="">
             </div>
-        <div class='box__container box__container--content'>
-        </div>
-        <div class="box__container">
+            <div class='box__container box__container'>
+                <button class='' id="generate-fortune">Ask for your fortune</button>
 
-                <button class="btn btn__box--tag">Manga</button>
-                <button class="btn btn__box--tag">Sadfrogs</button>
-                <button class="btn btn__box--tag">Siren</button>
             </div>
         </article>
-        
 
+    
+    
         <article data-filter='mood' class="articles__box box ">
             <h3 class="box__headline">Iron tears</h3>
             <div class="box__container box__container--image">
@@ -246,6 +234,51 @@
             </div>
         </article>
 
+        
+        <article data-filter='mood' id='brain' class="articles__box box ">
+            <h3 class="box__headline">Brainnnnyyy</h3>
+            <div class="box__container box__container--image">
+                <button class="btn btn__box--category btn__box--category--image">Mood</button>
+                <img class='box__img' src="resources/de6cda7b41b57b170737e9c43c76e434.jpg" alt="">
+            </div>
+        <div class='box__container box__container--content'>
+            <p>Jelly fish, jelly fish swimming in the sea, Floating in the water up where I can see. I have to be careful, don't come too near, Your tentacles might sting, I'm out of here.</p>
+        </div>
+        <div class="box__container">
+
+                <button class="btn btn__box--tag">jellyfish</button>
+                <button class="btn btn__box--tag">Lste</button>
+                <button class="btn btn__box--tag">Siren</button>
+            </div>
+        </article>
+
+        <article data-filter='divination' id='sun' class="articles__box box ">
+            <h3 class="box__headline">Sun & Selene</h3>
+            <div class="box__container box__container--image">
+                <button class="btn btn__box--category btn__box--category--image">Mood</button>
+                <img class='box__img' src="resources/762740c5098c80be768a5b2916104d93.jpg" alt="">
+            </div>
+        <div class='box__container box__container--content'>
+            <p>Once upon a time, in a world much like ours, the Sun was the most beautiful object in the sky. Its golden light warmed the Earth, and its radiance lit up the heavens.
+
+            <p>But one day, the Sun grew tired of its routine. It wanted to be more than just a ball of gas and plasma, shining in the sky day after day. It longed to explore the universe, to see the wonders that lay beyond its reach.</p>
+
+            <p>So, the Sun decided to transform itself. It condensed its energy into a single point and burst forth as a beam of light, streaking across the sky like a comet. The people of Earth were amazed and terrified by this sudden change. They had never seen anything like it before. </p>
+            <p>As the Sun traveled further and further into space, it encountered new and strange worlds. It witnessed stars being born and galaxies colliding. It even encountered intelligent life, beings who were fascinated by the Sun's beauty and power, but none of them felt quite right.</p>
+            <p>Then, one day, the Sun met a small, icy moon named Selene. Selene was quiet and contemplative. She spent her days orbiting a gas giant planet and observing the universe from a distance.</p>
+            <p>They talked about the mysteries of the universe and the wonder of creation. They gazed out into the cosmos together, watching as stars were born and planets formed.</p>
+            <p>As time went on, the Sun and Selene fell deeply in love. Their light intertwined, creating a beautiful dance of warmth and cold that was unlike anything anyone had ever seen before. </p>
+                </p>
+        </div>
+        <div class="box__container">
+
+                <button class="btn btn__box--tag">loveStory</button>
+                <button class="btn btn__box--tag">Sun</button>
+                <button class="btn btn__box--tag">Moon</button>
+            </div>
+        </article>
+    
+
         <article data-filter='mood' class="articles__box box">
             <h3 class="box__headline">Iron tears</h3>
             <div class="box__container box__container--image">
@@ -261,6 +294,7 @@
                 <button class="btn btn__box--tag">Siren</button>
             </div>
         </article>
+
         <article data-filter='divination' class="articles__box box">
             <h3 class="box__headline">Cold water</h3>
             <div class="box__container box__container--image">

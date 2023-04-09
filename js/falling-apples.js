@@ -152,9 +152,6 @@ function game(category) {
   let letterHolder = generateHolderList(word)
   let usedLetters = []
   let chances = 8
-  console.log(word)
-  console.log(letterHolder)
-  console.log(usedLetters)
 
   document.getElementById('game__categories-container').style.display = 'none'
   document.getElementById('game__play').style.display = 'grid'
@@ -194,7 +191,7 @@ function game(category) {
     crystal.style.animation = 'falling-with-bounce 0.5s steps(7) forwards';
   }
 
-  function tryAgain(score) {
+  function end(score) {
     gameForm.style.display = 'none'
     gameComment.style.display = 'none'
     gameUsedLetters.style.display = 'none'
@@ -217,6 +214,7 @@ function game(category) {
       classColor = 'game__red-lose'
 
     }
+    
     const finalLettersWinOrLose = document.querySelectorAll('.game__letter');
     finalLettersWinOrLose.forEach(letter => {
       letter.classList.add(classColor)});
@@ -225,23 +223,7 @@ function game(category) {
     OffComment.innerHTML = ''
     usedLetters = []
 
-    const tryAgainButton = document.createElement('button')
-    tryAgainButton.innerHTML = 'Try Again'
-    tryAgainButton.classList.add('game__button-try')
-    tryAgainButton.addEventListener('click', choseCategory)
-    tryAgainButton.addEventListener('click', (event) => {
-      text.remove()
-      event.target.remove()
-      
 
-    })
-    container.appendChild(tryAgainButton)
-
-    
-    
-
-
-    
   }
 
 
@@ -268,11 +250,11 @@ function game(category) {
         updateLetters(letterHolder)
         if (letterHolder.join('') === word) {
           const win = 'win'
-          return tryAgain(win)
+          return end(win)
         } 
         else if (chances <= 0) {
             const lose = 'lose'
-            return tryAgain(lose)
+            return end(lose)
           }
 
         }

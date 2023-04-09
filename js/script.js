@@ -62,6 +62,8 @@ const dropdownButton = document.querySelector('.dropdown-button');
 const dropdownContent = document.querySelector('.dropdown-content');
 
 
+function menuDisplayComment() {
+
 dropdownButton.addEventListener("mouseenter", function() {
     dropdownContent.style.display = "block";
   });
@@ -69,8 +71,15 @@ dropdownButton.addEventListener("mouseenter", function() {
     dropdownContent.style.display = "none";
   });
 
+}
 
-const formSurvay = document.getElementById("survay");
+
+if (window.innerWidth >= 768) {
+    menuDisplayComment();
+  }
+
+
+const formSurvay = document.getElementById("survey");
 
 formSurvay.addEventListener("submit", event => {
   event.preventDefault();

@@ -231,7 +231,7 @@ h3, h2, h1 {
     text-transform: none !important;
 }
 
-.btn--survay {
+.btn--survey  {
     font-size: 1rem;
     background-color: #e3e3e3;
     padding: .7rem 2rem;
@@ -242,7 +242,7 @@ h3, h2, h1 {
 }
 
 
-.btn--survay:hover {
+.btn--survey :hover {
     background-color: #cfcfcf;
 }
 
@@ -366,17 +366,17 @@ h3, h2, h1 {
 }
 
 
-.survay__box {
+.survey  {
     margin: 1.5rem 0;
 
 }
 
-.survay__container--range {
+.survey__container--range {
     position: relative;
     height: 2.5rem;
 }
 
-.survay__range {
+.survey__range {
     display: block;
     width: 33.33%;
     text-align: center;
@@ -384,20 +384,20 @@ h3, h2, h1 {
     position: absolute;
   }
   
-  .survay__range:first-child {
+  .survey__range:first-child {
     left: 0;
   }
   
-  .survay__range:last-child {
+  .survey__range:last-child {
     right: 0;
   }
   
-.survay__range:nth-child(2) {
+.survey__range:nth-child(2) {
     left: 33.33%;
   }
 
 
-.survay__question {
+.survey__question {
     font-size: 1rem;
     display: inline-block;
     font-weight: bold;
@@ -613,10 +613,17 @@ hr {
     flex-direction: column;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
 }
 
 .game__label {
     line-height: 1.1;
+}
+
+
+.game__button-start {
+    border-bottom: 2px solid #fff;
+
 }
 
 .game__button-try,
@@ -643,6 +650,7 @@ hr {
 
 
 }
+
 
 .game__button-try:hover,
 .game__button-category:hover {
@@ -711,22 +719,10 @@ hr {
     
 }
 
-.btn__game {
-    font-size: 1rem;
-    padding: 1rem 1.5rem;
-    transition: 0.3s ease-in-out;
-    background-color: #f0defc;
-    box-shadow: 0 0 5px 5px #dbaaee56;
+.btn__game 
+ 
 
 
-}
-
-
-
-.btn__game:hover {
-    background-color: #dad4fd;
-    box-shadow: 0 0 5px 5px #c1aef173;
-}
 
 .btn__category-item {
     min-width: 15rem;
@@ -745,7 +741,8 @@ hr {
 }
 
 
-#game__categories-container {
+#game__categories-container, 
+.game__form {
     position: relative;
     width: 90%;
     margin: auto;
