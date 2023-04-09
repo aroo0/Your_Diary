@@ -238,7 +238,7 @@ h3, h2, h1 {
 }
 
 
-.btn--survey :hover {
+.btn--survey:hover {
     background-color: #cfcfcf;
 }
 
@@ -354,6 +354,7 @@ h3, h2, h1 {
     font-size: 0.7rem;
     background-color: rgb(221, 221, 221);
     padding: .3rem .9rem;
+    cursor: default;
 }
 
 
