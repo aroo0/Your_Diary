@@ -17,10 +17,13 @@ function gridInit() {
         itemSelector: '.articles__box',
         masonry: {
             fitWidth: true,
-            gutter: 30
+            gutter: 30,
+            columnWidth: 60,
          }
 
     });
+
+
     
     document.addEventListener('click', documentActions);
 

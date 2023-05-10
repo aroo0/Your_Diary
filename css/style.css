@@ -19,11 +19,27 @@ html {
     font-family: 'Roboto Mono', monospace;
 }
 
+@media (max-width: 500px) {
+    html {
+        font-size: 14px;
+    }
+    
+}
+
+
+@media (max-width: 400px) {
+    html {
+        font-size: 11px;
+    }
+
+}
+
 body {
     background-image: var(--background_gradient);
     background-size: 200%;
     animation: bg-animation 50s infinite alternate;
     min-height: 100vh;
+    margin: 0
 }
 
 * {
@@ -46,7 +62,7 @@ h3, h2, h1 {
     justify-content: center;
     align-items: center;
     gap: .1rem;
-    margin-top: 2rem;
+    margin: 2rem .5rem;
 
 }
 
@@ -107,7 +123,8 @@ h3, h2, h1 {
 
 .navbar__title-headline {
     font-weight: 300;
-    font-size: 1.2rem;
+    text-align: center;
+    font-size: clamp(.9rem, 1vw, 1.2rem);
     text-transform: lowercase;
 }
 
@@ -157,8 +174,16 @@ h3, h2, h1 {
     margin-bottom: 2rem;
     width: 37rem;
 
-
 }
+
+@media (max-width: 800px) {
+    .articles__box {
+        box-sizing: border-box;
+        width: 100%
+}
+}
+
+
 
 
 
@@ -377,7 +402,7 @@ h3, h2, h1 {
     display: block;
     width: 33.33%;
     text-align: center;
-    font-size: 14px;
+    font-size: .9rem;
     position: absolute;
   }
   
@@ -518,7 +543,7 @@ hr {
 .hangman-headline {
     font-family: 'vcr_osd_monoregular';
     font-size: 2.5rem;
-    width: 30rem;
+    max-width: 30rem;
     text-align: center;
     transform: rotate(-3deg);
     z-index: 10;
